@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Tổ 2</title>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/anhlop/favicon.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/anhlop/favicon.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/anhlop/favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <body>
+    <div id="intro-overlay">
+    <canvas id="introFallingCanvas"></canvas>
+    <div class="intro-content">
+        <p class="intro-quote">"Hoa rơi cửa phật vạn vật thua lớp 12H"</p>
+        
+        <div class="enter-btn">
+            <span>[ Click ]</span>
+            <div class="wave"></div>
+        </div>
+    </div>
+</div>
+    <nav class="navbar">
+      <div class="nav-brand">Tổ 2</div>
+      <div class="nav-center-title">Lớp 12 Hoá</div>
+      <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    
+    <li><a href="#members">Member</a></li>
+    
+    <li><a href="#activity">Activity</a></li>
+    
+    <li><a href="#Contact">Contact</a></li>
+</ul>
+    </nav>
+
+    <input
+      type="radio"
+      name="gallery"
+      id="gal-close"
+      class="gallery-input"
+      checked
+    />
+    <input type="radio" name="gallery" id="gal-1" class="gallery-input" />
+    <input type="radio" name="gallery" id="gal-2" class="gallery-input" />
+    <input type="radio" name="gallery" id="gal-3" class="gallery-input" />
+    <input type="radio" name="gallery" id="gal-4" class="gallery-input" />
+    <input type="radio" name="gallery" id="gal-5" class="gallery-input" />
+    <input type="radio" name="gallery" id="gal-6" class="gallery-input" />
+    <div class="gallery-lightbox">
+      <div class="lightbox-inner">
+        <label for="gal-close" class="gal-close-btn">&times;</label>
+        <label for="gal-close" class="gal-overlay-close"></label>
+
+        <div class="gal-slide slide-1">
+          <img src="./assets/anhlop/anhlop1.jpg" alt="Ảnh 1" />
+          <label for="gal-3" class="nav-btn prev">&#10094;</label>
+          <label for="gal-2" class="nav-btn next">&#10095;</label>
+        </div>
+
+        <div class="gal-slide slide-2">
+          <img src="./assets/anhlop/anhlop2.jpg" alt="Ảnh 2" />
+          <label for="gal-1" class="nav-btn prev">&#10094;</label>
+          <label for="gal-3" class="nav-btn next">&#10095;</label>
+        </div>
+
+        <div class="gal-slide slide-3">
+          <img src="./assets/anhlop/anhlop3.jpg" alt="Ảnh 3" />
+          <label for="gal-2" class="nav-btn prev">&#10094;</label>
+          <label for="gal-1" class="nav-btn next">&#10095;</label>
+        </div>
+      </div>
+      <div class="gal-slide slide-4">
+        <img src="./assets/anhlop/anhlop4.jpg" alt="Ảnh 4" />
+        <label for="gal-6" class="nav-btn prev">&#10094;</label>
+        <label for="gal-5" class="nav-btn next">&#10095;</label>
+      </div>
+
+      <div class="gal-slide slide-5">
+        <img src="./assets/anhlop/anhlop5.jpg" alt="Ảnh 5" />
+        <label for="gal-4" class="nav-btn prev">&#10094;</label>
+        <label for="gal-6" class="nav-btn next">&#10095;</label>
+      </div>
+
+      <div class="gal-slide slide-6">
+        <img src="./assets/anhlop/anhlop6.jpg" alt="Ảnh 6" />
+        <label for="gal-5" class="nav-btn prev">&#10094;</label>
+        <label for="gal-4" class="nav-btn next">&#10095;</label>
+      </div>
+    </div>
+
+    <header id="home" class="hero-wrapper">
+      <div class="gallery-container">
+        <label for="gal-1" class="gallery-card img-1">
+          <img src="./assets/anhlop/anhlop1.jpg" alt="Ảnh lớp" />
+        </label>
+
+        <label for="gal-2" class="gallery-card img-2">
+          <img src="./assets/anhlop/anhlop2.jpg" alt="Ảnh lớp 2" />
+        </label>
+
+        <label for="gal-3" class="gallery-card img-3">
+          <img src="./assets/anhlop/anhlop3.jpg" alt="Ảnh lớp 3" />
+        </label>
+      </div>
+    </header>
+
+    <main id="members" class="container">
+      <h2 class="section-title">Giới Thiệu Tổ 2</h2>
+      <div class="leader-section">
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-leader" class="zoom-trigger" />
+
+          <div class="lightbox-overlay">
+            <label for="zoom-leader" class="close-area"></label>
+            <label for="zoom-leader" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/hoanggiang.jpg"
+              alt="Tổ Trưởng zoom"
+            />
+          </div>
+
+          <label for="zoom-leader" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/hoanggiang.jpg" alt="Tổ Trưởng" />
+            </div>
+            <div class="member-info">
+              <span class="badge leader">Tổ Trưởng</span>
+              <h3 class="name">Đào Hoàng Giang</h3>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <h2 class="section-title">Thành Viên Tổ</h2>
+      <div class="members-grid">
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-1" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-1" class="close-area"></label>
+            <label for="zoom-1" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/anhkhoa.jpg"
+              alt="anh khoa zoom"
+            />
+          </div>
+          <label for="zoom-1" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/anhkhoa.jpg" alt="anh khoa" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Trần Anh Khoa</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-2" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-2" class="close-area"></label>
+            <label for="zoom-2" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/tramanh.jpg"
+              alt="trâm anh zoom"
+            />
+          </div>
+          <label for="zoom-2" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/tramanh.jpg" alt="trâm anh" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Nguyễn Hồ Trâm Anh</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-3" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-3" class="close-area"></label>
+            <label for="zoom-3" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/bakhiem.jpg"
+              alt="bá khiêm zoom"
+            />
+          </div>
+          <label for="zoom-3" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/bakhiem.jpg" alt="bá khiêm" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Phạm Bá Khiêm</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-4" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-4" class="close-area"></label>
+            <label for="zoom-4" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/nghia.jpg"
+              alt="nghĩa zoom"
+            />
+          </div>
+          <label for="zoom-4" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/nghia.jpg" alt="nghĩa" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Võ Trọng Nghĩa</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-5" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-5" class="close-area"></label>
+            <label for="zoom-5" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/lyna.jpg"
+              alt="ly na zoom"
+            />
+          </div>
+          <label for="zoom-5" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/lyna.jpg" alt="ly na" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Thượng Vũ Ly Na</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-6" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-6" class="close-area"></label>
+            <label for="zoom-6" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/viethoang.jpg"
+              alt="vh Zoom"
+            />
+          </div>
+          <label for="zoom-6" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/viethoang.jpg" alt="vh" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Thái Việt Hoàng</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-7" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-7" class="close-area"></label>
+            <label for="zoom-7" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/tqb.jpg"
+              alt="tqb zoom"
+            />
+          </div>
+          <label for="zoom-7" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/tqb.jpg" alt="tqb" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Trần Quốc Bảo</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-8" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-8" class="close-area"></label>
+            <label for="zoom-8" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/nhuquynh.jpg"
+              alt="như quỳnh Zoom"
+            />
+          </div>
+          <label for="zoom-8" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/nhuquynh.jpg" alt="như quỳnh" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Lữ Ngọc Như Quỳnh</h3>
+            </div>
+          </label>
+        </div>
+
+        <div class="card-wrapper">
+          <input type="checkbox" id="zoom-9" class="zoom-trigger" />
+          <div class="lightbox-overlay">
+            <label for="zoom-9" class="close-area"></label>
+            <label for="zoom-9" class="close-btn">&times;</label>
+            <img
+              class="lightbox-content"
+              src="./assets/anhlop/tk.jpg"
+              alt="tk Zoom"
+            />
+          </div>
+          <label for="zoom-9" class="member-card">
+            <div class="image-frame">
+              <img src="./assets/anhlop/tk.jpg" alt="tk" />
+            </div>
+            <div class="member-info">
+              <span class="badge member">Thành Viên</span>
+              <h3 class="name">Nguyễn Thành Khoa</h3>
+            </div>
+          </label>
+        </div>
+      </div>
+    </main>
+</main>
+
+   <section class="hero-wrapper" id="bottom-gallery" style="height: auto; min-height: 90vh; flex-direction: column; justify-content: flex-start; padding-top: 60px; padding-bottom: 100px;">
+  
+  <h2 class="gallery-main-title" style="position: relative; margin-bottom: 50px; z-index: 100;" id="activity">
+    Một số Ảnh & Video khác
+  </h2>
+
+  <div class="gallery-container" style="height: 60vh; width: 100%;">
+    
+    <label for="gal-4" class="gallery-card img-1">
+      <img src="./assets/anhlop/anhlop4.jpg" alt="Ảnh lớp dưới 1" />
+    </label>
+
+    <label for="gal-5" class="gallery-card img-2">
+      <img src="./assets/anhlop/anhlop5.jpg" alt="Ảnh lớp dưới 2" />
+    </label>
+
+    <label for="gal-6" class="gallery-card img-3">
+      <img src="./assets/anhlop/anhlop6.jpg" alt="Ảnh lớp dưới 3" />
+    </label>
+
+  </div>
+
+</section>
+
+   </section> 
+
+   <section class="video-section">
+    <div class="video-glass-wrapper" id="tilt-card">
+        
+        <h3 class="video-slogan">
+            "Tuổi 17 của chúng ta... còn chưa kịp nói lời tạm biệt đã phải lớn lên."
+        </h3>
+
+        <div class="video-container">
+            <video id="classVideo" controls poster="./assets/anhlop/anhthayduy.jpg">
+                <source src="./assets/anhlop/vd.mp4" type="video/mp4" />
+            </video>
+        </div>
+
+    </div>
+</section>
+<section id="activity" class="film-section">
+    <h2 class="section-title2">Những bức ảnh kỷ niệm</h2>
+    
+    <div class="film-scroll-container">
+        <div class="film-track">
+            
+            <div class="timeline-axis"></div>
+
+            <div class="film-item top">
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory1.jpg" alt="Kỷ niệm 1">
+                    <div class="film-info">
+        
+                        <p>Tấm hình đông đủ nhất từ trước đến nay</p>
+                    </div>
+                </div>
+                <div class="connector"></div>
+            </div>
+
+            <div class="film-item bottom">
+                <div class="connector"></div>
+                
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory2.jpg" alt="Kỷ niệm 2">
+                    <div class="film-info">
+    
+                        <p>Những ngày đầu tiên của chuỗi 1000 ngày cấp 3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="film-item top">
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory3.jpg" alt="Kỷ niệm 3">
+                    <div class="film-info">
+
+                        <p>Tấm hình chụp vội hôm bị nhốt ngoài lớp.</p>
+                    </div>
+                </div>
+                <div class="connector"></div>
+            </div>
+            <div class="film-item bottom">
+                <div class="connector"></div>
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory4.jpg" alt="Kỷ niệm 4">
+                    <div class="film-info">
+        
+                        <p>Tấm hình lần đầu tự tổ chức OFFLINE</p>
+                    </div>
+                </div>
+            </div>
+            <div class="film-item top">
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory5.jpg" alt="Kỷ niệm 5">
+                    <div class="film-info">
+                        <p>Lần đầu chơi trại của 10 Hoá</p>
+                    </div>
+                </div>
+                <div class="connector"></div>
+            </div>
+
+            <div class="film-item bottom">
+                <div class="connector"></div>
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory6.jpg" alt="Kỷ niệm 6">
+                    <div class="film-info">
+                        <p>Kỉ niệm 19/11 và chuyến đi chơi đầu tiên - những ngày đầu của lớp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="film-item top">
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory7.jpg" alt="Kỷ niệm 7"> <div class="film-info">
+                        <p>First movie together 🎬</p>
+                    </div>
+                </div>
+                <div class="connector"></div>
+            </div>
+
+            <div class="film-item bottom">
+                <div class="connector"></div>
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory8.jpg" alt="Kỷ niệm 8"> <div class="film-info">
+                        <p>Ảnh tổ 2 duy nhất từ trước đến nay</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="film-item top">
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory9.jpg" alt="Kỷ niệm 9"> <div class="film-info">
+                        <p>Khối Hoá vô địch đá banh năm 2025 ⚽</p>
+                    </div>
+                </div>
+                <div class="connector"></div>
+            </div>
+
+            <div class="film-item bottom">
+                <div class="connector"></div>
+                <div class="film-backdrop">
+                    <img src="./assets/anhlop/memory10.jpg" alt="Kỷ niệm 10"> <div class="film-info">
+                        <p>Mùa 20-11 cuối cấp</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="timeline-end-arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <footer class="site-footer" id="Contact">
+      <div class="footer-left">
+        &copy; 2026 Tổ 2. ALL RIGHTS RESERVED
+    </div>
+
+   <div class="footer-center">
+    <a href="https://github.com/nek0conmeobeo" target="_blank" class="social-icon">
+        <i class="fa-brands fa-github"></i>
+    </a>
+
+    <a href="mailto:nghiavo198022@gmail.com?subject=Góp ý cho website Tổ 2" class="social-icon" title="Gửi Email">
+        <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <a href="https://www.facebook.com/profile.php?id=61550948979206" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <a href="https://www.facebook.com/messages/t/6056020541186608" target="_blank" class="social-icon">
+        <i class="fa-brands fa-facebook-messenger"></i>
+    </a>
+</div>
+
+      <div class="footer-right">
+        <p>Website Developer/Coder/Designer - Võ Trọng Nghĩa</p>
+        <p>Visual/Photo Designer - Thượng Vũ Ly Na</p>
+        <p>Video Editor/Idea Creator - Đào Hoàng Giang</p>
+      </div>
+      
+    </footer>
+    <canvas id="pinkSnowCanvas"></canvas>
+    <script src="./effectkeovatha.js"></script>
+    <script src="./effecttuyetroi.js"></script>
+    <script src="./hieuungkhung.js"></script>
+    <script src="./hieuungkhung.js"></script>
+    <script src="./intro.js"></script>
+    <script src="./introtuyetroi.js"></script>
+    <script src="./loichuc.js"></script>
+
+    <div id="timeline-lightbox">
+      <span class="lightbox-close">&times;</span>
+    <div class="lightbox-btn lightbox-prev"><i class="fa-solid fa-chevron-left"></i></div>
+    <div class="lightbox-btn lightbox-next"><i class="fa-solid fa-chevron-right"></i></div>
+    <img src="" alt="Timeline Preview">
+</div>
+
+  </body>
+</html>
