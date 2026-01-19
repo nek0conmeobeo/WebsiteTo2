@@ -840,7 +840,7 @@ body:has(.zoom-trigger:checked) .navbar {
 }
 
 .intro-quote {
-  font-family: "Segoe UI", sans-serif;
+  font-family: "Segoe UI", sans-serif !important;
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 30px;
@@ -1376,4 +1376,5 @@ body:has(.zoom-trigger:checked) .navbar {
     font-family: 'Poppins', sans-serif !important;
     font-weight: 400 !important;
 }
+
 
