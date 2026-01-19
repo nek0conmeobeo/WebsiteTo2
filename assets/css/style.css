@@ -1357,14 +1357,4 @@ body:has(.zoom-trigger:checked) .navbar {
   }
 }
 
-/* FIX LỖI FONT TRÊN ĐIỆN THOẠI    */
-
-
-.section-title2 {
-    font-family: 'Great Vibes', cursive !important;
-    font-weight: 400 !important;
-    font-style: normal !important; 
-}
-
-
 
