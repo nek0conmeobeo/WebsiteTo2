@@ -1367,10 +1367,4 @@ body:has(.zoom-trigger:checked) .navbar {
 }
 
 
-.footer-right p, .footer-left {
-    font-family: 'Poppins', sans-serif !important;
-    font-weight: 400 !important;
-}
-
-
 
