@@ -754,7 +754,7 @@ body:has(.zoom-trigger:checked) .navbar {
   justify-content: space-between;
   align-items: center;
   padding: 5px 5% !important;
-  background: #eee;
+  background: #cfcfcf81;
   color: var(--primary-color);
   font-size: 0.9rem;
   position: relative;
@@ -1356,3 +1356,4 @@ body:has(.zoom-trigger:checked) .navbar {
     font-size: 24px;
   }
 }
+
